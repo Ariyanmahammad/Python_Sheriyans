@@ -1,0 +1,277 @@
+1. List ([])
+fruits = ["apple", "banana", "mango"]
+Properties
+✅ Ordered
+✅ Mutable (can change)
+✅ Allows duplicates
+✅ Indexed , allows multiple data types for e,g. 1,'a'...
+
+print(fruits[0])      # apple
+
+fruits.append("kiwi")
+
+fruits[1] = "orange"
+
+Result
+
+['apple', 'orange', 'mango', 'kiwi']
+When to use List?
+
+Whenever you have a collection of items that may change.
+
+Examples
+
+Student marks
+To-do list
+Shopping list
+ML dataset rows
+Images in a folder
+
+Example
+
+marks = [78, 90, 81, 65]
+
+marks.append(95)
+
+Easy to add/remove/update.
+
+2. Tuple (())
+point = (10, 20)
+Properties
+✅ Ordered
+❌ Immutable (cannot change)
+✅ Allows duplicates
+✅ Indexed
+point[0]
+
+But
+
+point[0] = 50
+
+gives
+
+TypeError
+Why Tuple?
+
+Because the data should never change.
+
+Examples
+
+Coordinates
+
+(25.34, 88.54)
+
+RGB Color
+
+(255,0,0)
+
+Days of week
+
+("Mon","Tue","Wed")
+
+Database records
+
+Advantage
+
+Python stores tuples more efficiently.
+
+Less memory
+
+Faster
+
+Safer
+
+3. Dictionary ({key:value})
+student = {
+    "name":"Ariyan",
+    "age":21,
+    "cgpa":9.1
+}
+Properties
+Key-Value pair
+Mutable
+Keys must be unique
+Very fast lookup
+Ordered (Python 3.7+)
+
+Access
+
+student["name"]
+
+Output
+
+Ariyan
+
+Update
+
+student["age"]=22
+When to use Dictionary?
+
+Whenever you want to search by a key.
+
+Examples
+
+Student details
+
+{
+"name":"Rahul",
+"roll":12
+}
+
+Phonebook
+
+{
+"Rahul":"98765",
+"Amit":"99887"
+}
+
+JSON data
+
+API responses
+
+Machine Learning feature names
+
+Why dictionary?
+
+Searching
+
+student["name"]
+
+is extremely fast (average O(1)).
+
+4. Set ({})
+nums = {1,2,3,4}
+Properties
+Unordered
+Mutable
+No duplicates
+No indexing
+nums = {1,2,2,2,3,4}
+
+print(nums)
+
+Output
+
+{1,2,3,4}
+
+Duplicates removed automatically.
+
+When to use Set?
+
+Whenever uniqueness matters.
+
+Examples
+
+Unique emails
+
+emails = {
+"a@gmail.com",
+"b@gmail.com"
+}
+
+Unique student IDs
+
+Unique words
+
+Removing duplicates
+
+numbers = [1,2,2,3,3,4]
+
+unique = set(numbers)
+
+print(unique)
+
+Output
+
+{1,2,3,4}
+Membership checking
+if 10 in nums:
+
+Very fast.
+
+Comparison Table
+Feature	    List	    Tuple	 Dictionary	   Set
+Ordered	    ✅	       ✅	    ✅	       ❌
+Mutable	    ✅	       ❌	    ✅	       ✅
+Duplicates	✅	       ✅	    Keys ❌	   ❌
+Indexing	✅	       ✅	    By key	     ❌
+Key-Value	❌	       ❌	    ✅	        ❌
+Fast Search	Medium	Medium	⭐ Very Fast	⭐ Very Fast
+Real-world analogy
+
+Imagine you're in your room.
+
+📝 List = Shopping List
+Milk
+Eggs
+Bread
+Rice
+
+You can add, remove, and reorder items.
+
+📍 Tuple = GPS Location
+Latitude
+Longitude
+
+Coordinates should never change accidentally.
+
+📖 Dictionary = Contact Book
+Ariyan → 9876543210
+Rahul → 9123456789
+
+Search by name.
+
+🎫 Set = Guest List
+Ariyan
+Rahul
+Rahul
+Rahul
+Sonia
+
+After storing:
+
+Ariyan
+Rahul
+Sonia
+
+Duplicates disappear automatically.
+
+How AI/ML uses them
+📋 List
+Dataset rows
+Features
+Predictions
+Batch data
+images = ["img1.jpg", "img2.jpg", "img3.jpg"]
+📌 Tuple
+Image dimensions
+(224, 224, 3)
+Coordinates
+Model input shapes
+📚 Dictionary
+Hyperparameters
+model = {
+    "learning_rate": 0.001,
+    "epochs": 50,
+    "batch_size": 32
+}
+JSON data
+API responses
+Label mappings
+🎯 Set
+Remove duplicate labels
+Find unique classes
+labels = ["cat", "dog", "cat", "bird"]
+
+unique = set(labels)
+
+print(unique)
+
+Output:
+
+{'cat', 'dog', 'bird'}
+Quick rule to remember
+📋 List → I have a collection that changes.
+📌 Tuple → I have a collection that should never change.
+📚 Dictionary → I want to look up values by a key.
+🎯 Set → I only care about unique items.

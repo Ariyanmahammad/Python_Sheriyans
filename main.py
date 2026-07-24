@@ -105,3 +105,72 @@ else:
 
 for i in range(1,11):
     print(i)
+
+
+def sum(x,y):
+    return x+y
+
+print(sum(2,4))
+
+
+def palindrome(string):
+    if string == string[::-1]:
+        print("The string is a palindrome")
+    else:
+        print("The string is not a palindrome")
+
+# palindrome(input("Enter a string : "))
+
+#data structures in python 
+
+#list
+#tuple
+#dictionary
+#set
+
+#list - mutable
+#tuple - immutable
+#dictionary - mutable
+#set - mutable
+
+# list - []
+# tuple - ()
+# dictionary - {}
+# set - {}
+
+#example -list
+list1 = [1,2,3,4,5]
+print(list1)
+print(list1[0])
+print(list1[-1])
+print(list1[1:4])
+list1.append(6)
+print(list1)
+list1[3] = 10
+print(list1)
+
+#example -tuple
+tuple1 = (1,2,3,4,5)
+print(tuple1)
+print(tuple1[0])
+print(tuple1[-1])
+print(tuple1[1:4])
+
+#example -dictionary
+dict1 = {1:"A",2:"B",3:"C",4:"D",5:"E"}
+print(dict1)
+print(dict1[1])
+print(dict1.keys())
+print(dict1.values())
+print(dict1.items())
+
+#example -set
+set1 = {1,2,3,4,5}
+print(set1)
+set1.add(6)
+print(set1)
+set1.remove(6)
+print(set1)
+
+#when to use which data structures 
+
