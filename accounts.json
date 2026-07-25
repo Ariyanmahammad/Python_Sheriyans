@@ -1,0 +1,51 @@
+[
+    {
+        "acc_no": "1001",
+        "name": "Ariyan",
+        "balance": 3919,
+        "history": [
+            "2026-07-25 13:47:00.629783 : Demo Account Created"
+        ]
+    },
+    {
+        "acc_no": "1002",
+        "name": "Rahul",
+        "balance": 4118,
+        "history": [
+            "2026-07-25 13:47:00.629783 : Demo Account Created"
+        ]
+    },
+    {
+        "acc_no": "1003",
+        "name": "Sneha",
+        "balance": 3089,
+        "history": [
+            "2026-07-25 13:47:00.629783 : Demo Account Created"
+        ]
+    },
+    {
+        "acc_no": "1004",
+        "name": "Ankit",
+        "balance": 1276,
+        "history": [
+            "2026-07-25 13:47:00.629783 : Demo Account Created"
+        ]
+    },
+    {
+        "acc_no": "1005",
+        "name": "Priya",
+        "balance": 4289,
+        "history": [
+            "2026-07-25 13:47:00.629783 : Demo Account Created"
+        ]
+    },
+    {
+        "acc_no": "12345",
+        "name": "Ariyan",
+        "balance": 600.0,
+        "history": [
+            "2026-07-25 13:47:58.159306 : Account Created",
+            "2026-07-25 13:48:09.219259 : Deposited \u20b9100.00"
+        ]
+    }
+]
